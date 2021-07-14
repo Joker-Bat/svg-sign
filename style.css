@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  background: rgb(17, 17, 17);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  max-width: 500px;
+  width: 95%;
+  height: 100px;
+}
+
+#sign {
+  animation: signfill 1.5s ease 6.9s forwards;
+}
+
+
+#sign #M {
+  stroke-dasharray: 284;
+  stroke-dashoffset: 284;
+  animation: sign 1s linear forwards;
+}
+
+#sign #dot {
+  stroke-dasharray: 29;
+  stroke-dashoffset: 29;
+  animation: sign .3s linear forwards 0.9s;
+}
+
+#sign #first {
+  stroke-dasharray: 218;
+  stroke-dashoffset: 218;
+  animation: sign 1s linear forwards 1.5s;
+}
+
+#sign #second {
+  stroke-dasharray: 274;
+  stroke-dashoffset: 274;
+  animation: sign 1s linear forwards 2.5s;
+}
+
+#sign #third {
+  stroke-dasharray: 117;
+  stroke-dashoffset: 117;
+  animation: sign 0.5s linear forwards 3.5s;
+}
+
+#sign #fourth {
+  stroke-dasharray: 301;
+  stroke-dashoffset: 301;
+  animation: sign 1s linear forwards 4s;
+}
+
+
+#sign #fifth {
+  stroke-dasharray: 185;
+  stroke-dashoffset: 185;
+  animation: sign 1s linear forwards 5s;
+}
+
+#sign #sixth {
+  stroke-dasharray: 137;
+  stroke-dashoffset: 137;
+  animation: sign 0.8s linear forwards 6s;
+}
+
+#sign #seventh {
+  stroke-dasharray: 76;
+  stroke-dashoffset: 76;
+  animation: sign 1s linear forwards 6.8s;
+}
+
+@keyframes sign {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes signfill {
+  from {
+    fill: transparent;
+  } to {
+    fill: white;
+  }
+}
